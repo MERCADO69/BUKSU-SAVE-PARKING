@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BUKSU SAVE PARKING</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#techstack">Tech Stack</a>
+          <a href="#audience">Who's it for?</a>
+          <a href="#benefits">Why Use It?</a>
+          <a href="#team">Developers</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero-section" id="home">
+      <h1 class="title">BUKSU SAVE PARKING</h1>
+      <p class="subtitle">A mobile app for Students, Staff and Visitors.</p>
+      <div class="scroll-prompt">Scroll Down</div>
+    </section>
+
+    <!-- Section 2: About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="content">
+          <h1 class="section-title">What is BukSU Save Parking</h1>
+          <p class="description">
+            BUKSU Save Parking is a smart and simple mobile application designed
+            to help students, faculty, and visitors of Bukidnon State University
+            (BUKSU) easily save and locate their parked vehicles using real-time
+            location tools. Whether you're parked in a busy lot or returning
+            after class, never lose track of your car again!
+          </p>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="Images/MOBILE PHONE 1.svg"
+            alt="App Preview"
+            class="hover-scale"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section X: App Screenshots -->
+    <section class="screenshot-section">
+      <div class="screenshot-container">
+        <div class="screenshot-content">
+          <h1 class="screenshot-title">App Screenshots</h1>
+          <p class="screenshot-description">
+            Take a visual tour of the BUKSU Save Parking app! These screenshots
+            highlight key features and show how easy it is to save and locate
+            your parking spot.
+          </p>
+        </div>
+
+        <div class="screenshot-gallery">
+          <div class="screenshot-item">
+            <img src="screenshot/1.svg" alt="Home Screen" />
+          </div>
+          <div class="screenshot-item">
+            <img src="screenshot/2.svg" alt="Save Location Feature" />
+          </div>
+          <div class="screenshot-item">
+            <img src="screenshot/3.svg" alt="Navigation to Car" />
+          </div>
+          <div class="screenshot-item">
+            <img src="screenshot/4.svg" alt="Navigation to Car" />
+          </div>
+          <div class="screenshot-item">
+            <img src="screenshot/5.svg" alt="Navigation to Car" />
+          </div>
+          <div class="screenshot-item">
+            <img src="screenshot/6.svg" alt="Navigation to Car" />
+          </div>
+          <div class="screenshot-item">
+            <img src="screenshot/7.svg" alt="Navigation to Car" />
+          </div>
+          <div class="screenshot-item">
+            <img src="screenshot/8.svg" alt="Navigation to Car" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Section X: App Screenshots */
+      .screenshot-section {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 50px;
+      }
+
+      .screenshot-container {
+        width: 85%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .screenshot-content {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .screenshot-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #ffd700;
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .screenshot-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        max-width: 600px;
+        margin-bottom: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .screenshot-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 3 images per row */
+        gap: 30px;
+        width: 100%;
+      }
+
+      .screenshot-item {
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .screenshot-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .screenshot-item:hover img {
+        transform: scale(1.05);
+      }
+
+      .screenshot-item:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-color: rgba(255, 215, 0, 0.3);
+      }
+
+      @media (max-width: 768px) {
+        .screenshot-gallery {
+          grid-template-columns: repeat(
+            2,
+            1fr
+          ); /* 2 images per row on smaller screens */
+        }
+      }
+
+      @media (max-width: 480px) {
+        .screenshot-gallery {
+          grid-template-columns: 1fr; /* 1 image per row on mobile */
+        }
+      }
+    </style>
+
+    <!-- Section 3: Features Section -->
+    <section class="features-section" id="features">
+      <div class="features-container">
+        <h1 class="section-title">Key Features of the app</h1>
+
+        <div class="features-list">
+          <div class="feature">
+            <div class="feature-number">1</div>
+            <div class="feature-content">
+              <h2 class="feature-title">Save Parking Location:</h2>
+              <p class="feature-description">
+                Save your current GPS location with a single tap before leaving
+                your vehicle.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-number">2</div>
+            <div class="feature-content">
+              <h2 class="feature-title">Real-Time Navigation:</h2>
+              <p class="feature-description">
+                Get distance and directional guidance to your saved location
+                using your device's sensors.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-number">3</div>
+            <div class="feature-content">
+              <h2 class="feature-title">Find Your Car with Compass & Maps:</h2>
+              <p class="feature-description">
+                Navigate back to your parked location using a built-in compass
+                and Google Maps directions.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-number">4</div>
+            <div class="feature-content">
+              <h2 class="feature-title">Simple, User-Friendly Interface:</h2>
+              <p class="feature-description">
+                Easy to use – no technical knowledge required.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Tech Stack -->
+    <section class="techstack-section" id="techstack">
+      <div class="container">
+        <h1 class="section-title" style="text-align: center">Our Tech Stack</h1>
+        <p
+          class="description"
+          style="
+            text-align: center;
+            margin-bottom: 1px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          We used modern technologies and tools to build a robust and
+          user-friendly parking application.
+        </p>
+
+        <div class="techstack-grid">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="Images/java.svg" alt="Java" class="tech-img" />
+            </div>
+            <div class="tech-name">Java</div>
+            <div class="tech-desc">
+              Primary programming language for Android app development
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img
+                src="Images/android-icon.svg"
+                alt="Android Studio"
+                class="tech-img"
+              />
+            </div>
+            <div class="tech-name">Android Studio</div>
+            <div class="tech-desc">Official IDE for Android development</div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="Images/sqlite-icon.svg" alt="SQLite" class="tech-img" />
+            </div>
+            <div class="tech-name">SQLite</div>
+            <div class="tech-desc">
+              Local database for storing parking locations
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="Images/figma-icon.svg" alt="Figma" class="tech-img" />
+            </div>
+            <div class="tech-name">Figma</div>
+            <div class="tech-desc">UI/UX design and prototyping tool</div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img src="Images/HTML.svg" alt="HTML&CSS" class="tech-img" />
+            </div>
+            <div class="tech-name">HTML & CSS</div>
+            <div class="tech-desc">
+              For structuring and styling the app's website with a responsive,
+              visually appealing layout.
+            </div>
+          </div>
+
+          <div class="tech-item">
+            <div class="tech-icon">
+              <img
+                src="Images/javascript-icon.svg"
+                alt="Javascript"
+                class="tech-img"
+              />
+            </div>
+            <div class="tech-name">Javascript</div>
+            <div class="tech-desc">
+              For interactive features and smooth animations that enhance user
+              experience.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Who is it for? -->
+    <section class="audience-section" id="audience">
+      <div class="container">
+        <div class="image-container">
+          <img src="Images/who.svg" alt="Target Audience" class="hover-scale" />
+        </div>
+
+        <div class="content">
+          <h1 class="section-title">Who is it for?</h1>
+
+          <div class="description-container">
+            <div class="description">
+              BUKSU Save Parking is designed for Bukidnon State University
+              <span class="highlight">students, staff, faculty members</span>,
+              and <span class="highlight">campus visitors</span> who often
+              forget where they parked and need a convenient, stress-free way to
+              save and locate their vehicle using reliable tools like GPS,
+              Compass, and Maps.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Why Use It? -->
+    <section class="benefits-section" id="benefits">
+      <div class="container">
+        <div class="content">
+          <h1 class="section-title">Why Use It?</h1>
+
+          <p class="description">
+            BUKSU Save Parking helps you never lose track of your car again,
+            saving valuable time walking around campus by using smart
+            technologies like GPS, Compass, and Maps all thoughtfully designed
+            to meet the specific needs of the Bukidnon State University
+            community.
+          </p>
+
+          <div class="cta">Start using BuKSU Save Parking Today</div>
+          <div class="tagline">the smart way to find your way back!</div>
+
+          <a
+            href="https://github.com/MERCADO69/BUKSU-SAVE-PARKING/releases/download/v1.0/BUKSU.SAVE.PARKING.apk"
+            class="download-btn hover-grow"
+          >
+            <span class="material-icons">android</span>
+            <span class="text">Download app</span>
+          </a>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="Images/PHONE 2.svg"
+            alt="App Benefits"
+            class="hover-scale"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Meet the Developers -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <h1 class="section-title" style="text-align: center; width: 100%">
+          MEET THE DEVELOPERS
+        </h1>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="profile-img-container hover-rotate">
+              <img src="Images/Davy.svg" alt="Davy Mercado" />
+            </div>
+            <div class="member-name">Davy Mercado</div>
+            <div class="member-role-primary">UX/UI Designer</div>
+            <div class="member-role-primary">Frontend Developer</div>
+          </div>
+
+          <div class="team-member">
+            <div class="profile-img-container hover-rotate">
+              <img src="Images/Dagooc.svg" alt="John Dagooc" />
+            </div>
+            <div class="member-name">John Dagooc</div>
+            <div class="member-role-primary">Backend Developer</div>
+          </div>
+
+          <div class="team-member">
+            <div class="profile-img-container hover-rotate">
+              <img src="Images/Mart.svg" alt="Mart Dahao" />
+            </div>
+            <div class="member-name">Mart Dahao</div>
+            <div class="member-role-primary">Project Manager</div>
+          </div>
+
+          <div class="team-member">
+            <div class="profile-img-container hover-rotate">
+              <img src="Images/Gerome.svg" alt="Gerome Aljas" />
+            </div>
+            <div class="member-name">Gerome Aljas</div>
+            <div class="member-role-primary">Functionality Researcher</div>
+          </div>
+        </div>
+
+        <p
+          class="description"
+          style="text-align: center; max-width: 800px; margin: 0 auto"
+        >
+          Hey there! We're IT students from Bukidnon State University, and we
+          created the Save Parking app as part of our project. Our goal was to
+          use what we've learned to solve a real-world problem and make parking
+          easier for everyone. We hope you enjoy using it!
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="logo">BUKSU SAVE PARKING</div>
+        <div class="copyright">
+          &copy; 2025 BUKSU IT Students. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

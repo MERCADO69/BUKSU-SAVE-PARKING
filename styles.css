@@ -379,11 +379,11 @@ body {
 
 /* Section 5: Who is it for? */
 .audience-section {
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 100px;
+  padding: 80px 150px;
 }
 
 .highlight {
@@ -452,6 +452,38 @@ body {
   background-color: rgba(6, 170, 91, 0.993);
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(6, 170, 91, 0.4);
+}
+.docs-link {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+  padding-right: 300px;
+}
+
+.docs-link:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.docs-link:after {
+  content: '';
+  position: absolute;
+  width: 34%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #ffd700;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.docs-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Section 7: Meet the Developers */
